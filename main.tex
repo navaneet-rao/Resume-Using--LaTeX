@@ -1,0 +1,240 @@
+%-------------------------
+% Resume in Latex
+% Author : Navaneet R Rao
+% Based on: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+
+\documentclass[letterpaper,16pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+
+% serif
+\usepackage{charter}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\bfseries\scshape\raggedright
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+% -------------------- HEADING --------------------
+
+    \begin{center}
+        \textbf{\Huge \scshape Navaneet R Rao}
+        \\ 
+        
+        % \faIcon{code}
+        % \href{https://navaneet-rao.github.io/portfolio-website/}
+        % {\underline{/portfolio-website}} 
+            
+        \vspace{8pt}
+        
+        {\large 
+            {
+                \faIcon{github}
+                    \href{https://github.com/navaneet-rao}
+                {\color{Aquamarine}\underline{github.com/navaneet-rao}} \ \ \ \  
+                \faIcon{linkedin}
+                    \href{https://www.linkedin.com/in/navaneet-r-rao}
+                {\color{Aquamarine}\underline{linkedin.com/in/navaneet-r-rao}} \ \ \ \ 
+                \faIcon{envelope}
+                    \href{mailto:navaneet517@gmail.com}
+                {\color{Aquamarine}\underline{navaneet517@gmaill.com}}
+            }
+        
+        }
+    \end{center}
+
+%----------- EDUCATION -----------------
+\section{Education }
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jyothy Institute of Technology - VTU}{Bengaluru, Karnataka}
+      {Bachelor of Engineering (B.E) in Computer Science (3rd Year) -- \textbf{7.55 GPA}}{Dec. 2021 -- Present}
+  \resumeSubHeadingListEnd
+  
+%----------- PROFESSIONAL EXPERIENCE -----------------
+\section{Professional Experience }
+ \resumeSubHeadingListStart
+ 
+      \resumeSubheading
+      {Enterprise Building Training Solutions (EBTS)}{Bengaluru}
+      {Cyber security Essentials Intern}{May. 2022}
+    \resumeItemListStart
+        \resumeItem
+          {Applied practical skills, identifying vulnerabilities and proposing effective mitigation strategies.}
+        \resumeItem
+          {Collaborated with Cyber security professionals, gaining valuable insights into practical aspects.}
+        \resumeItem
+          {Experienced in \textbf{CTFs}, Honeypots, firewalls, and more.}
+        \resumeItem
+          {Implemented firewall rules using \textbf{pf Sense} and increasing network security and seamless traffic management by \textbf{35\%}.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Red Hat -- \href{https://rhtapps.redhat.com/verify?certId=230-264-087}{\color{Aquamarine}\underline{Certificate}}}{Bengaluru}
+      {Red Hat internship training}{Oct. 2022 - Nov. 2022}
+      \resumeItemListStart
+        \resumeItem
+          {Enhanced system security, managed essential networking, proficiently handled user and group administration, executed seamless deployment and ongoing system maintenance, adeptly addressed troubleshooting challenges.}
+        \resumeItem
+          {Orchestrated containerized systemd services for an httpd/CentOS image on the Red Hat Enterprise Linux (RHEL) platform.}
+        \resumeItem
+          {Implemented CI/CD through \textbf{Open Shift} with \textbf{GitHub} for Version control for a react-based website }
+        \resumeItem
+          {The specialized training contributed to the successful completion of the \textbf{EX200} Red Hat Certified System Administrator exam with a score of \textbf{87\%} }
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd    
+
+%-----------PROJECTS-----------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{Network Security Analyst - NMAP} $|$ \footnotesize\emph{Kali Linux, NMAP, Wireshark}}{May. 2022}
+        \resumeItemListStart
+            \resumeItem{Utilized key tools, including \textbf{NMAP} and \textbf{Wireshark}, to identify and evaluate potential vulnerabilities within the 3 different domains}
+            \resumeItem{Conducted targeted scans on \textbf{70\%} of three \textbf{FQDNs}, successfully identifying vulnerabilities in \textbf{10\%} of the scanned domains.}
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+        {\textbf{Data Restoration from a PCap File} $|$ \footnotesize\emph{Kali Linux, Wireshark, HxD}}{Jun. 2023}
+        \resumeItemListStart
+            \resumeItem{Applied Wireshark for thorough analysis and interpretation of a \textbf{PCap} file, extracting key insights into \textbf{Network Communication}}
+            \resumeItem{Proficiently used \textbf{HxD} for precise data restoration, successfully recovering \textbf{95\%} of data with proficiency in recognizing and interpreting various  \textbf{file signatures} during the process. }
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+        {\textbf{Real Time Automated Notification} $|$ \footnotesize\emph{Windows, Powershell, NTFY}}{Sep. 2023}
+        \resumeItemListStart
+            \resumeItem{Developed an \textbf{automated push notification} system using the NTFY library and PowerShell scripting to enhance \textbf{real-time} communication within a Windows environment.}
+            \resumeItem{This PowerShell script continuously monitors the battery status of a system, sending notifications using NTFY and executing an additional script when transitioning between battery and plugged-in states.}
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+        {\textbf{Me2Chat - Real-time Chat App} $|$ \footnotesize\emph{React Native, Expo, Typescript, Tailwind CSS, Firebase}}{Dec. 2023}
+        \resumeItemListStart
+            \resumeItem{Developed a real-time chat application using React Native, Expo, Typescript, Tailwind CSS, and Firebase.}
+            \resumeItem{Implemented user authentication, allowing users to securely sign in and register.}
+            \resumeItem{Utilized Firebase \textbf{Realtime} Database for efficient and synchronized data updates in real-time.}
+        \resumeItemListEnd
+     
+    \resumeSubHeadingListEnd
+
+
+%--------------PROGRAMMING SKILLS-------------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Python, JavaScript, TypeScript, HTML, CSS, C, C++, C\#, Java, PowerShell, LaTeX}
+     \hfill \\
+     \textbf{Libraries/Frameworks}{: ReactJS, React Native, NodeJS, TaildwindCSS, Boorstrap, Flask, Computer Vision, Jupyter Notebook}
+     \hfill \\
+     \textbf{Databases}{: MySQL, MongoDB, Firebase}
+     \hfill \\
+     \textbf{Tools}{: VSCode, Git, GCP, VMWare, VBox, Docker, Pod man, open shift, NMAP, Wireshark, Arduino, MS Office}
+   }
+ \resumeSubHeadingListEnd
+%--------------CERTIFICATIONS-------------------
+\section{Certifications}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Front-End Web UI Frameworks and Tools: Bootstrap 4, }{Coursera -- \href{https://coursera.org/share/6f277b468374e3dbe6a26c67811db539}{\color{Aquamarine}\underline{Certificate}}}
+     \hfill \\
+     \textbf{Introduction to Cybersecurity Tools \& Cyber Attacks, }{Coursera -- \href{https://coursera.org/share/317c6874e71c67cfde693de6e5de7e49}{\color{Aquamarine}\underline{Certificate}}}
+     \hfill \\
+     \textbf{Cybersecurity Roles, Processes \& Operating System Security, }{Coursera -- \href{https://coursera.org/share/2ab125b6a50b05a2ed5eb454cce95afd}{\color{Aquamarine}\underline{Certificate}}}
+     \hfill \\
+     \textbf{Nmap for Ethical Hackers - The Ultimate Hands-On Course, }{Udemy -- 
+     \href{https://www.udemy.com/certificate/UC-bd741301-70d9-4a30-a11e-26f92aa1c287/}{\color{Aquamarine}\underline{Certificate}}}
+     \hfill \\
+     \textbf{EX200 Red Hat Certified System Administrator, }{Red Hat -- \href{https://rhtapps.redhat.com/verify?certId=230-264-087}{\color{Aquamarine}\underline{Certificate}}}
+     \hfill \\
+     \textbf{Google Cloud Fundamentals: Core Infrastructure, }{Google Cloud Skills Boost -- \href{https://www.cloudskillsboost.google/public_profiles/bd9c5896-4d7c-44d8-aa79-295b8944bf04/badges/4323872}{\color{Aquamarine}\underline{Certificate}}}
+     \hfill \\
+     \textbf{Essential Google Cloud Infrastructure: Foundation, }{Google Cloud Skills Boost -- \href{https://www.cloudskillsboost.google/public_profiles/bd9c5896-4d7c-44d8-aa79-295b8944bf04/badges/4760001?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share}{\color{Aquamarine}\underline{Certificate}}}
+   }
+ \resumeSubHeadingListEnd
+%----------- END OF DOCUMENT -----------------
+\end{document}
